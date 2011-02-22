@@ -1,0 +1,23 @@
+{
+	"name": "E-X-T-E-N-S-I-O-N",
+	"version": "0.1",
+	"description": "Adds a special button whenever \"inception\" is mentioned on a page. Bwaaaaaaap!",
+	"page_action": {
+		"default_icon": "icon16.png"
+	},
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"permissions": [
+		"http://*",
+		"https://*"
+	],
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["bwaaap.js"]
+		}
+	]
+}
