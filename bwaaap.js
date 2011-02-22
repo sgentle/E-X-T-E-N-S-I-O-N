@@ -31,9 +31,10 @@ while ((textNode = nodeIterator.nextNode()) != null) {
 
 	    var img = document.createElement('img');
 		img.src = chrome.extension.getURL('bwaaap.png')
-		img.onclick = function() {
+		img.addEventListener('click',function(ev) {
 			bwaaap.play();
-		}
+			ev.stopPropagation();
+		}, false);
 	
 	    textNode.parentNode.insertBefore(img, secondNode);
 
