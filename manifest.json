@@ -1,7 +1,12 @@
 {
 	"name": "E-X-T-E-N-S-I-O-N",
-	"version": "0.2",
+	"manifest_version": 2,
+	"version": "0.3",
 	"description": "Adds a special button whenever \"inception\" is mentioned on a page. Bwaaaaaaap!",
+	"web_accessible_resources": [
+		"bwaaap.png",
+		"bwaaap.mp3"
+	],
 	"page_action": {
 		"default_icon": "icon16.png"
 	},
@@ -11,8 +16,8 @@
 		"128": "icon128.png"
 	},
 	"permissions": [
-		"http://*",
-		"https://*"
+		"http://*/*",
+		"https://*/*"
 	],
 	"content_scripts": [
 		{
